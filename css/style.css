@@ -36,10 +36,8 @@ html body main {
   display: flex;
   flex-direction: column;
 }
-html body main .product-image-container picture {
+html body main .product-image-container img {
   display: flex;
-}
-html body main .product-image-container picture img {
   width: 100%;
 }
 html body main .product-info-container {

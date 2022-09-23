@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 90%;
+  max-width: 600px;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
+
+.product-image-container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .product-image-container {
+    width: 50%;
+  }
+}
+
+.product-image-container img {
+  display: flex;
+  width: 100%;
+}
+
+.product-info-container {
+  padding: 2em;
+}
+@media (min-width: 768px) {
+  .product-info-container {
+    padding: 2.5rem;
+    width: 50%;
+  }
+}
+
+.category {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: hsl(228deg, 12%, 48%);
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0.5em 0;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.information {
+  color: hsl(228deg, 12%, 48%);
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .information {
+    margin: 1.5rem 0;
+  }
+}
+
+.pricing {
+  margin: 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .pricing {
+    margin: 2rem 0;
+  }
+}
+
+.discounted-price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: hsl(158deg, 36%, 37%);
+}
+@media (min-width: 768px) {
+  .discounted-price {
+    font-size: 2.5rem;
+  }
+}
+
+.previous-price {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: hsl(228deg, 12%, 48%);
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  background-color: hsl(158deg, 36%, 37%);
+  border: 0;
+  color: hsl(0deg, 0%, 100%);
+  padding: 1em;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: hsl(158deg, 39%, 22%);
+}
+
+.btn img {
+  width: 1rem;
+  margin-right: 0.5em;
+  vertical-align: text-top;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

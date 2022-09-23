@@ -1,0 +1,138 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $main-font;
+    font-size: 14px;
+}
+
+body {
+    background-color: $body-bg;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: $white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $tablet) {
+        flex-direction: row;
+    }
+}
+
+.product-image-container {
+    width: 100%;
+    @media (min-width: $tablet) {
+        width: 50%;
+    }
+}
+
+.product-image-container img {
+    display: flex;
+    width: 100%;
+}
+
+.product-info-container {
+    padding: 2em;
+    @media (min-width: $tablet) {
+        padding: 2.5rem;
+        width: 50%;
+    }
+}
+
+.category {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+h1 {
+    font-family: $sub-font;
+    color: $title-bg;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0.5em 0;
+    @media (min-width: $tablet) {
+        font-size: 2.5rem;
+    }
+}
+
+.information {
+    color: $primary-color;
+    font-size: 1rem;
+    @media (min-width: $tablet) {
+        margin: 1.5rem 0;
+    }
+}
+
+.pricing {
+    margin: 1.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    @media (min-width: $tablet) {
+        margin: 2rem 0;
+    }
+}
+
+.discounted-price {
+    font-family: $sub-font;
+    font-size: 2rem;
+    color: $secondary-color;
+    @media (min-width: $tablet) {
+        font-size: 2.5rem;
+    }
+}
+
+.previous-price {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: $primary-color;
+}
+
+.btn {
+    font-family: $main-font;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    background-color: $secondary-color;
+    border: 0;
+    color: $white;
+    padding: 1em;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: hsl(158, 39%, 22%);
+    }
+}
+
+.btn img {
+    width: 1rem;
+    margin-right: 0.5em;
+    vertical-align: text-top;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
